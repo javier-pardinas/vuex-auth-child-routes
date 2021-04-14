@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 
 //PLUGINS
-requestAnimationFrame('./plugins');
+require('./plugins')
 
 Vue.config.productionTip = false
 
