@@ -1,7 +1,7 @@
 import Vue from 'vue';
 
 //A preloader gets executed when we log in y we make a query to the API
-export function signIn(context, user) {
+export async function signIn(context, user) {
     try {
         //(mutation, true (execute), setLoading belongs to the root of the store)
         context.commit('setLoading', true, {root: true});
