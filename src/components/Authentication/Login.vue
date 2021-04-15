@@ -1,5 +1,5 @@
 <template>
-    <!--emit(): emit an event called login-->
+    <!--emit(): emit an event called login (Login view)-->
     <b-form @submit.prevent="$emit('login')">
         <b-form-group label="Email" description="Private Info">
             <b-form-input type="email" autocomplete="off" 

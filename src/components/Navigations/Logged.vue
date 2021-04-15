@@ -10,7 +10,7 @@
 import {mapMutations} from 'vuex';
 export default {
     methods: {
-        ...mapMutations('authentication', ['logout']),
+        ...mapMutations('auth', ['logout']),
         _logout() {
             this.logout();
             this.$router.push('/login');

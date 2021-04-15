@@ -10,11 +10,11 @@ export async function signIn(context, user) {
             url: '/login',
             data: user
         })
-        //(module/mutation, 2parameter of that mutation)
-        context.commit('authentication/setUser', user);
+        //(mutation, 2parameter of that mutation)
+        context.commit('setUser', user);
     } catch(e) {
-        //(module/mutation, 2parameter of that mutation)
-        context.commit('authentication/authError', e.message);
+        //(mutation, 2parameter of that mutation)
+        context.commit('authError', e.message);
     } finally {
         //disable spinner (loader):
         //(mutation, true (execute), setLoading belongs to the root of the store)
